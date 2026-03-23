@@ -1,12 +1,23 @@
-const authService = require("../services/authService");
+const authService = require('../services/authService')
+class AuthController{
+    async registorUser(req,res){
+       let ret = await authService.registorUser(
+    req.body.name,
+    req.body.email,
+    req.body.password
+);
+       if(typeof ret === "string"){
+        res.json({
+            status: "Error",
+            message: 'problem in registration process'
+        })
+       }else{
+        res.json({
+            status: "Sucess",
 
-class AuthController {
-    async register(req, res) {
-        let ret = await authService.register(req.req);
-        if(typeof ret === 'string') {
-            res.json({status: 'error', message: 'problem in registration process'})
-        } else {
-            res.json({status: 'success', message: 'user registered successfully'})
-        }
+        })
+       }
+
     }
 }
+module.exports = new AuthController();

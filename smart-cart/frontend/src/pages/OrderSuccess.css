@@ -1,0 +1,12 @@
+.success-page { min-height: calc(100vh - 64px); display: flex; align-items: center; justify-content: center; padding: 2rem 0; }
+.success-card { max-width: 520px; width: 100%; text-align: center; padding: 3rem 2rem; }
+.success-icon { font-size: 4rem; margin-bottom: 1.25rem; animation: pop 0.5s ease; }
+@keyframes pop { 0%{transform:scale(0)} 80%{transform:scale(1.15)} 100%{transform:scale(1)} }
+.success-card h1 { font-size: 1.8rem; margin-bottom: 0.75rem; }
+.success-sub { color: var(--text-muted); margin-bottom: 2rem; }
+.order-details { background: var(--dark2); border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; text-align: left; }
+.detail-row { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text-muted); }
+.detail-row:last-child { border-bottom: none; }
+.detail-row.total { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+.mono { font-family: monospace; color: var(--primary); }
+.success-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }

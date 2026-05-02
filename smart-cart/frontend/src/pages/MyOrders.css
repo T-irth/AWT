@@ -1,0 +1,13 @@
+.orders-list { display: flex; flex-direction: column; gap: 1.25rem; padding-bottom: 3rem; }
+.order-card { padding: 1.25rem; }
+.order-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+.order-id { font-family: monospace; font-weight: 700; color: var(--primary); display: block; font-size: 1rem; }
+.order-date { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem; display: block; }
+.order-badges { display: flex; gap: 0.5rem; }
+.order-items-preview { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item-chip { display: flex; align-items: center; gap: 0.4rem; background: var(--dark2); border-radius: 20px; padding: 0.3rem 0.75rem; font-size: 0.82rem; color: var(--text-muted); }
+.order-item-chip img { width: 20px; height: 20px; border-radius: 4px; object-fit: cover; }
+.more-items { font-size: 0.82rem; color: var(--text-muted); padding: 0.3rem 0.5rem; }
+.order-card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--border); }
+.order-meta { display: flex; gap: 1.5rem; font-size: 0.88rem; color: var(--text-muted); }
+.order-total { color: var(--primary); }
